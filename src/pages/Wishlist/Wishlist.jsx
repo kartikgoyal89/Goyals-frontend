@@ -38,11 +38,7 @@ const Wishlist = () => {
                 style={{ width: "100%", height: "350px" }}
                 className="d-flex flex-column align-items-center justify-content-center"
               >
-                <img
-                  src="../../../public/empty-wishlist.png"
-                  alt=""
-                  width="400px"
-                />
+                <img src="/empty-wishlist.png" alt="" width="400px" />
                 <h3 style={{ color: "#777" }}>Empty Wishlist.</h3>
               </div>
             ) : (

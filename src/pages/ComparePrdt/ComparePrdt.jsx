@@ -46,7 +46,7 @@ const ComparePrdt = () => {
             {compareState?.length === 0 ? (
               <div className="w-100 d-flex flex-column gap-20 align-items-center justify-content-center">
                 <img
-                  src="../../../public/no-compare.png"
+                  src="/no-compare.png"
                   alt=""
                   width="170px"
                   style={{ color: "#777" }}

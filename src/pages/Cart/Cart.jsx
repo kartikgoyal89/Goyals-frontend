@@ -84,11 +84,7 @@ const Cart = () => {
 
               {cartState?.length === 0 ? (
                 <div className="w-100 d-flex align-items-center justify-content-center flex-column">
-                  <img
-                    src="../../../public/empty-cart.png"
-                    alt=""
-                    height="300px"
-                  />
+                  <img src="/empty-cart.png" alt="" height="300px" />
                   <h3 style={{ color: "#777" }}>Empty Cart</h3>
                 </div>
               ) : (
