@@ -8,7 +8,6 @@ import "./order.css";
 const Orders = () => {
   const dispatch = useDispatch();
   const orderState = useSelector((state) => state.auth.orderedProducts?.orders);
-  console.log(orderState);
 
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const breakpoint = 845;
