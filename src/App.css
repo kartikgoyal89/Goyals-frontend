@@ -1,0 +1,153 @@
+:root{
+    --color-131921: #131921;
+    --color-3b4149: #3b4149;
+    --color-febd69: #febd69;
+    --color-232f3e: #232f3e;
+    --color-bf4800: #bf4800;
+    --color-f5f5f7: #f5f5f7;
+    --color-edebed: #ededed;
+    --color-1c1c1b: #1c1c1b;
+    --color-777777: #777777;
+    --color-ebebeb: #ebebeb;
+    --color-f2f2f2: #f2f2f2;
+    --color-eaeaea: #eaeaea;
+}
+
+.gap-5{
+    gap: 5px;
+}
+.gap-10{
+    gap: 10px;
+}
+.gap-15{
+    gap: 15px;
+}
+.gap-20{
+    gap: 20px;
+}
+.gap-30{
+    gap: 30px;
+}
+.text-white{
+    color: white;
+}
+
+.error{
+    color: rgb(230, 16, 16);
+}
+
+
+/* AUTH CARD CSS */
+.auth-card{
+    padding: 20px;
+    background-color: white;
+    width: 500px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+.auth-card h5{
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--color-777777);
+}
+
+
+.auth-card .form-control{
+    height: 40px;
+    background-color: var(--color-f5f5f7);
+    border:none;
+}
+
+.auth-card input::placeholder{
+    color: var(--color-777777);
+    font-size: 15px;
+}
+
+.auth-card a{
+    font-size: 14px;
+}
+
+.auth-card .btn{
+    background-color: var(--color-232f3e);
+    color: white;
+    border-radius: 20px;
+    padding: 8px 30px;
+}
+input[type="password"]::-ms-reveal,
+input[type="password"]::-webkit-reveal {
+    display: none;
+}
+
+.auth-card .btn:nth-child(2){
+    background-color: var(--color-febd69);
+    color: var(--color-131921);
+    font-size: 14.5px;
+}
+
+.auth-card .btn:first-child:hover{
+    background-color: var(--color-febd69);
+    color: var(--color-131921);
+}
+
+.auth-card .btn:nth-child(2):hover{
+    color: white;
+    background-color: var(--color-232f3e);
+}
+.auth-card p{
+    font-size: 14px;
+    color: var(--color-777777);
+}
+
+.auth-card .view-btn{
+    top: 9px;
+    right: 10px;
+}
+
+.auth-card .view-btn .view{
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--color-3b4149);
+}
+
+.auth-card .view-btn .view:nth-child(2){
+    display: none;
+}
+
+@media (max-width: 580px) {
+    .auth-card{
+        padding: 20px;
+        background-color: white;
+        width: 350px;
+        margin: 50px auto;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    }
+    .auth-wrapper{
+        padding: 15px 25px;
+    }
+}
+
+
+
+/* POLICY PAGE CSS */
+
+.policy-wrapper{
+    background-color: var(--color-f5f5f7);
+}
+.policy-wrapper .container-xxl{
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.policy-wrapper .row{
+    width: 80%;   
+}
+
+.policy-wrapper .policy{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+

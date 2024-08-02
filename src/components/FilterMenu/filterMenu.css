@@ -1,0 +1,225 @@
+.gap--5{
+    gap:4px;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.filter-menu{
+    width: 320px;
+    height: 100%;
+    position: relative;
+    box-shadow: 2px 3px 10px rgba(0,0,0,0.2);
+    margin: 0;
+    padding: 0;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    background-color: white;
+    overflow: scroll;
+    z-index: 100;
+    font-family: 'Rubik',sans-serif !important;
+    transition: all 0.4s ease-in-out;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.filter-menu .filter-container{
+    width: 100%;    
+}
+
+.filter-menu .filter-container .cross{
+    cursor: pointer;
+    color: white;
+    font-size: 30px !important;
+    position: absolute !important;
+    left: 10px !important;
+    top: 0px !important;
+}
+
+
+.filter-container .heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 18px;
+    margin-top: 10px;
+}
+
+.filter-container .heading h3{
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 17px;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+}
+
+.filter-container .heading .cross{
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+.filter-container  .hr{
+    margin-left: 17px;
+    margin-right: 17px;
+    height: 2px;
+    background-color: var(--color-1c1c1b) !important;
+    border:none;
+    border-radius: 10px;
+}
+
+.filter-container .list {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.filter-container .list ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.filter-container .list ul a{
+    width: 100%;
+    list-style: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    padding: 5px 6px;
+    overflow: hidden !important;
+    transition: all 0.4s ease-in-out;
+}
+.filter-container .list ul a:last-child{
+    border-bottom: none;
+}
+
+.filter-container .list ul a button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    padding-top: 10px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+
+.filter-container .list ul a button h3{
+    font-weight: 400;
+    color: black;
+    letter-spacing: 0.6px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.filter-container .list ul a:hover .list ul abutton{
+    background-color: rebeccapurple !important;
+}
+
+.filter-menu .social-icons{
+    width: 100%;
+    position: absolute;
+} 
+
+.filter-menu .social-icons ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 0px;
+}
+.filter-menu .social-icons ul .icon a{
+    padding: 6px 10px;
+    font-size: 20px;
+    color: white;
+    outline: none;
+    background-color: var(--color-3b4149);
+    border-radius: 50%;
+}
+
+
+.filter-menu.closed{
+    transform: translate(-400px);
+    transition: all 0.3s ease-in-out;
+}
+
+.filter-container.open{
+    transform: translate(30px);
+    transition: all 1s ease-in-out;
+    left: 0px;
+}
+
+
+.filter-container .form-select{
+    width: 70% !important;
+}
+
+/* SIDE FILTER CSS */
+
+.side-filter-page{
+    width: 100%;
+    min-height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 98px;
+    left: 310px;
+}
+
+.side-filter-page.open{
+    transform: translate(-308px);
+    transition: all 0.3s ease-in-out;
+}
+.side-filter-page.closed{
+    transform: translate(310px);
+    transition: all 0.3s ease-in-out;
+}
+
+.filter-btn{
+    position: absolute !important;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.filter-btn button.button{
+    border: 0px;
+    background-color: var(--color-3b4149);
+    padding: 10px 30px;
+    border-radius: 25px;
+}
+
+.filter-btn button.button:first-child{
+    background-color: var(--color-232f3e);
+    color: white;
+}
+.filter-btn button.button:first-child:hover{
+    background-color: var(--color-febd69);
+    color: var(--color-232f3e);
+}
+
+.filter-btn button.button:nth-child(2){
+    background-color: var(--color-febd69);
+    color: var(--color-232f3e);
+}
+
+.filter-btn button.button:nth-child(2):hover{
+    background-color: var(--color-232f3e);
+    color: white;   
+}
+
+.color-pallete{
+    min-height: 350px;
+    overflow-y: scroll;
+}

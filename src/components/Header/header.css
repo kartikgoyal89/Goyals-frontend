@@ -1,0 +1,378 @@
+
+/* HEADER PART */
+.header-top-strip{
+    background-color: var(--color-131921);
+    border: 1px solid var(--color-3b4149);
+}
+.header-top-strip .col-6 p{
+    font-size: 14px;
+    text-wrap: nowrap;
+}
+
+
+.header-upper{
+    background-color: var(--color-131921);
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+.header-upper .container-xxl{
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center !important;
+    vertical-align: middle;
+    /* overflow-x: hidden; */
+    gap: 20px;
+}
+
+.header-upper .responsive-menu{
+    display: none ;
+}
+
+.header-upper .container-xxl h2{
+    font-weight: 400 !important;
+    margin: 0px;
+}
+
+.header-upper .input-group{
+    margin: 0px !important;
+}
+
+.header-upper .input-group input{
+    outline: none !important;
+    border: none;
+    margin-bottom: 0px !important;
+    max-width: 600px;
+}
+
+.header-upper .input-group-text{
+    background-color: var(--color-febd69);
+    border: none;
+}
+.header-upper .input-group-text .search-icon{
+    font-size: 20px;
+}
+
+
+.header-upper .side-logo{
+    margin-left: 25px;
+}
+.header-upper .side-logo .icon-div{
+    padding: 0 10px;
+}
+
+.header-upper .side-logo .icon{
+    font-size: 30px;
+    color: #fff;
+}
+.header-upper .side-logo .icon-div p{
+    margin: 0px;
+    text-wrap: nowrap;
+    font-size: 14px;
+}
+
+.header-upper .side-logo .cart-icon{
+    color: var(--color-febd69);
+    font-size: 40px;
+}
+
+
+/* HEADER BOTTOM PART START HERE*/
+.header-bottom{
+    background-color: var(--color-232f3e);
+}
+.responsive-search{
+    display: none !important;
+}
+.header-bottom .menu-links a{
+    color:#fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 18px;
+    letter-spacing: 1px;
+}
+.header-bottom .dropdown button{
+    background-color: transparent !important;
+    border: none !important;
+    text-transform: uppercase !important;
+    outline: none !important;
+    font-size: 14px;
+}
+.header-bottom .dropdown button:focus{
+    box-shadow: none !important;
+}
+.header-bottom .dropdown button .shop-menu{
+    width: 25px;
+    margin-right: 10px;
+}
+
+.header-bottom .dropdown-menu{
+    background-color: var(--color-131921);
+    color: #fff;
+    width: 100%;
+    border-radius: 0px !important;
+    margin-top: 5px !important;
+    border-bottom-left-radius: 7px !important;
+    border-bottom-right-radius: 7px !important;
+    padding-bottom: 0px !important;
+}
+/* aspdoaspdo */
+.header-bottom .menu-bottom .dropdown-menu .dropdown-item{
+    color: #fff !important;
+    opacity: 0.9;
+    font-size: 14px;
+}
+.header-bottom .dropdown-menu li{
+    border-bottom: 1px solid #e4e3e33d;
+    padding: 10px 5px;
+}
+.header-bottom .dropdown-menu li:last-child{
+    border-bottom: 0px !important;
+}
+.header-bottom .dropdown-menu li .dropdown-item:hover{
+    background: transparent !important;
+    color: var(--color-febd69) !important;
+}
+
+
+
+/* RESPOSIVE SIDEBAR CSS */
+.responsive-sidebar{
+    background-color: var(--color-131921);
+    color: white;
+    min-width: 300px;
+    height: 100vh;
+    overflow-y: scroll;
+    position: absolute;
+    border:  1px solid rgba(255, 255, 255, .1);
+    margin-bottom: 0;
+    z-index: 100;
+    top: 55.9px;
+    left: 1px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.responsive-sidebar ul{
+    margin-bottom: 0;
+    padding: 0px;
+    margin-top: 50px;
+}
+.responsive-sidebar ul li{
+    list-style: none;
+    border-bottom:  1px solid rgba(255, 255, 255, .1);
+    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    opacity: 0.8;
+}
+.responsive-sidebar ul li:last-child{
+    margin-bottom: 0;
+}
+
+.responsive-sidebar .responsive-icons a{
+    font-size: 20px;
+}
+
+/* RESPONSIVE SIDEBAR CSS ENDS HERE */
+
+
+@media (max-width: 1115px) {
+    .header-upper .container-xxl{
+        gap: 10px;
+    }
+    .header-upper .container-xxl .digitic{
+        margin-right: 20px;
+        text-wrap: nowrap;
+    }
+    .header-upper .side-logo{
+        padding: 0px 20px 0 20px;
+    }
+    
+    .side-logo .icon-div{
+        padding: 0px  8px !important;
+    }
+    .side-logo .icon-div .icon{
+        font-size: 32px !important;
+    }
+    .side-logo .icon-div .cart-icon{
+        font-size: 40px !important;
+    }
+    .side-logo .icon-div p{
+        display: none;
+    }
+    .side-logo .icon-div .amount{
+        display: block !important;
+    }
+}
+
+
+@media (max-width: 980px) {
+    .header-upper .side-logo .icon-div .icon{
+        font-size: 30px !important;
+    }
+    .header-upper .side-logo .icon-div .cart-icon{
+        font-size: 35px !important;
+    }
+
+}
+
+@media (max-width: 910px) {
+    .header-upper .container-xxl .digitic .response-menu{
+        display: inherit;
+        margin: 0;
+        padding: 0;
+        margin-right: 8px;
+    }
+    .header-upper .container-xxl{
+        display: flex;
+        justify-content: space-between !important;
+        gap: 20px;
+    }
+    .header-upper .container-xxl .input-group{
+        display: none;
+    }
+    .header-upper .container-xxl .side-logo{
+        gap: 6px;
+    }
+    .header-upper .container-xxl .side-logo .icon-div .icon{
+        font-size: 32px !important;
+    }
+    .header-upper .container-xxl .side-logo .icon-div .cart-icon{
+        font-size: 40px !important;
+    }
+    .header-upper .container-xxl .digitic{
+        font-size: 35px !important;
+    }
+    .header-upper .container-xxl .digitic a{
+        font-size: 35px !important;
+    }
+    .header-upper .responsive-menu{
+        font-size: 35px !important;
+    }
+    .responsive-search{
+        display: inherit !important;
+        width: 100%;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    .responsive-search .responsive-search-container{
+        width: 550px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    .responsive-search-container .input-group{
+        margin: 0px !important;
+    }
+    .responsive-search .input-group-text{
+        background-color: var(--color-febd69);
+        border: none;
+    }
+    
+    .header-tags{
+        display: none;
+    }
+
+    .header-upper .responsive-menu{
+        display: inherit;
+    }
+}
+
+@media (max-width: 742px) {
+    .header-top-strip .container-xxl .shipping{
+        display: none !important;
+    }
+    .header-top-strip .container-xxl .col-6{
+        width: 100% !important;
+        text-align: center !important;
+    }
+    .header-top-strip .container-xxl .col-6 p.text-end{
+        text-align: center !important;
+    }
+}
+
+
+@media (max-width:635px) {
+    .header-top-strip .col-6 p{
+        font-size: 14px;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    .header-upper .digitic .logo{
+        font-size: 32px;
+    }
+    .header-upper .digitic .responsive-menu{
+        font-size: 30px;
+        margin-right: 5px;
+    }
+    .header-upper .container-xxl .digitic a{
+        font-size: 30px !important;
+    }
+    .header-upper .responsive-menu{
+        font-size: 30px !important;
+    }
+
+    .header-upper .container-xxl h2{
+        font-size: 25px;
+    }
+    .header-upper .container-xxl .side-logo{
+        gap: 4px;
+        padding: 0px !important;
+    }
+    .header-upper .container-xxl .side-logo .icon-div .icon{
+        width: 27px;
+    }
+    .header-upper .container-xxl .side-logo .icon-div .cart-icon{
+        width: 32px;
+    }  
+}
+
+@media (max-width: 528px) {
+    .header-top-strip .container-xxl{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    .header-top-strip .shipping{
+        display: none;
+    }
+
+    .header-top-strip .col-6 .hotline{
+        font-size: 15px;
+    }
+    .header-upper .side-logo .icon-div .cart-details{
+        display: none !important;
+    }
+}
+
+
+
+@media (max-width: 485px) {
+    .header-upper .digitic{
+        margin: 0px !important;
+    }
+    .header-upper .digitic .logo{
+        padding: 0px 0 0 10px !important;
+    }
+    .header-upper .side-logo{
+        margin: 0px !important;
+    }
+    .header-upper .side-logo .icon-div{
+        padding: 3px !important;
+    }
+    .header-upper .side-logo .icon-div .icon{
+        width: 25px !important;
+    }
+    .header-upper .side-logo .icon-div .cart-icon{
+        width: 30px !important;
+    }
+}
+.rbt-menu{
+    background-color: white !important;
+    margin-top: 0px !important;
+    margin: 0px !important;
+}

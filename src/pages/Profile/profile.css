@@ -1,0 +1,27 @@
+.profile-wrapper{
+    background-color: var(--color-f5f5f7);
+}
+form{
+    background-color: white;
+}
+
+input{
+    border: 1px solid #eee;
+
+}
+
+.profile-form{
+    width: 700px;
+}
+
+@media (max-width: 800px) {
+    .profile-form{
+        width: 500px;
+    }
+}
+
+@media (max-width: 500px) {
+    .profile-form{
+        min-width: 370px;
+    }
+}

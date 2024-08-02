@@ -1,0 +1,193 @@
+
+.special-product-card{
+    padding: 30px 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.09);
+    margin-top: 10px; 
+    height: auto !important;
+}
+
+.special-product-card .img-container{
+    width: 50% !important;
+    height: 100% !important;
+    padding: 10px !important;
+    overflow: hidden;
+}
+
+.special-product-card .special-product-content{
+    width: 50% !important;
+    height: 100% !important;
+    padding: 10px !important;
+    overflow: hidden;
+    float: right !important;
+}
+
+.special-product-card .img-container .img-div{
+    width: 70% !important;
+    height: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.special-product-card .img-container .img-div img{
+    margin-left: 20px;
+    width: 180px;
+}
+
+.special-product-card .img-slider{
+    padding-top: 20px;
+}
+.special-product-card .img-slider .item{
+    width: max-content !important;
+    /* border: 1px solid #e0e0e0; */
+    border-radius: 10px;
+}
+.special-product-card .img-slider .item img{
+    border: 1px solid #e0e0e0;
+}
+
+.special-product-card .wishlist-icon{
+    position: absolute !important;
+    right: 12px !important;
+}
+.special-product-card .action-bar{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 39px;
+    gap: 2px;
+    right: -24px;
+    transition: all 0.3s ease-i n-out;
+}
+
+.special-product-card .wishlist-icon:hover{
+    background-color: var(--color-febd69);
+}
+
+.special-product-card:hover .action-bar{
+    right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.special-product-card .special-product-content h5.brand{
+    font-size: 14px;
+    color: var(--color-bf4800);
+    font-weight: 400;
+}
+
+.special-product-card .special-product-content h6.title{
+    font-size: 16px;
+    color: black;
+}
+
+.special-product-card .special-product-content p.price{
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.special-product-card .special-product-content p.desc{
+    font-size: 13px;
+    text-align: start;
+    margin-top: 10px;
+    text-wrap: wrap;
+    color: rgb(139, 138, 138);
+}
+.special-product-card .special-product-content p.price .red-p{
+    color: red;
+}
+
+.special-product-card .special-product-content button.buy{
+    border: none;
+    padding: 8px 15px;
+    border-radius: 25px;
+    background-color: var(--color-131921);
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+
+.special-product-card .special-product-content button.buy:hover{
+    color:var(--color-131921);
+    background-color: var(--color-febd69);
+}
+
+
+.special-product-card  .slick-slider .slick-arrow.slick-next img{
+    position: absolute !important;
+    right: 50px !important;
+    top: -20px !important;
+}
+
+.special-product-card  .slick-slider .slick-arrow.slick-next img{
+    position: absolute !important;
+    top: -100px !important;
+    right: 45px !important;
+}
+
+.special-product-card .wishlist-icon{
+    height: 25px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.special-product-card .wishlist-icon a{
+    padding: 5px !important;
+}
+.special-product-card .action-bar a{
+    padding: 5px !important;
+    border-radius: 50%;
+}
+
+.special-product-card .action-bar a:hover{
+    background-color: var(--color-febd69);
+}
+
+.slick-dots {
+    display: flex !important; 
+    justify-content: center !important; 
+    list-style: none !important; 
+    padding: 0 !important; 
+    margin: 10px 0 !important; 
+    width: 80% !important;
+}
+
+/* Style each dot */
+.slick-dots li {
+    margin: 0 5px !important; 
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* Style the dot button */
+.slick-dots button {
+    width: 10px !important; 
+    height: 10px !important; 
+    border-radius: 50% !important;  
+    border: none !important; 
+    outline: none !important; 
+    cursor: pointer !important;
+}
+
+.slick-dots .slick-active button::before{
+    color: var(--color-131921) !important;
+}
+
+.img-slider {
+    height: 150px !important;
+}
+
+.img-slider .slick-slider{
+    height: 100% !important;
+}
+
+.img-slider .slick-slider .slick-list{
+    height: 100% !important;
+}

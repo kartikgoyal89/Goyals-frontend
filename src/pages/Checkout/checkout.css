@@ -1,0 +1,117 @@
+.checkout-wrapper{
+    background-color: var(--color-f5f5f7);
+    /* background-color: white; */
+}
+
+.checkout-wrapper a.button{
+    background-color: var(--color-232f3e);
+    color: white;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+
+.total{
+    font-size: 18px;
+    color: var(--color-1c1c1b);
+}
+
+.total-price{
+    font-size: 18px;
+    color: var(--color-1c1c1b);
+}
+
+.subtotal{
+    color: var(--color-777777);
+    font-size: 16px;
+}
+
+.checkout-wrapper .title{
+    color: var(--color-1c1c1b);
+    font-size: 20px;
+    font-weight: 500;
+}
+.checkout-wrapper .title:hover{
+    text-decoration: none;
+    cursor: default;
+}
+.checkout-wrapper .user-details{
+    color: var(--color-777777);
+    font-size: 15px;
+}
+.checkout-wrapper .desc{
+    font-size: 13px;
+    color: var(--color-777777);
+}
+
+.checkout-wrapper .prdt-price{
+    color: var(--color-777777);
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-size: 16px;
+}
+.side-part .prdt-image{
+    min-width: 50px;   
+    padding: 5px;
+}
+
+
+
+@media (max-width: 1000px) {
+    .checkout-wrapper .row{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 30px;
+
+    }
+    .checkout-wrapper .row .col-7{
+        width: 95% !important;
+    }
+    .checkout-wrapper .row .col-5{
+        width: 95% !important;
+    }
+    .checkout-wrapper .prdt-details .title{
+        font-size: 15px;
+    }
+    .checkout-wrapper .prdt-details .desc{
+        font-size: 12px;
+    }
+    a.button{
+        padding: 4px 12px !important;
+        font-size: 13px !important;
+    }
+    a.return{
+        font-size: 14px;
+    }
+    .breadcrumb-item a{
+        font-size: 14px !important;
+    }
+}
+
+a.button:hover{
+    color: var(--color-232f3e);
+    background-color:var(--color-febd69);
+}
+
+.apply-coupon-btn:hover{
+    background-color: #FEBD69 !important;
+    color: #131921 !important;
+}
+
+.continue-btn{
+    background-color: #131921;
+    border: none;
+    padding: 8px 20px;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.continue-btn:hover{
+    background-color: #FEBD69 !important;
+    color: #131921 !important;
+}
