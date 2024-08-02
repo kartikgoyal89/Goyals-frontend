@@ -2,7 +2,6 @@ import React, { Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import Home from "./pages/Home/Home.jsx";
-import About from "./pages/About/About.jsx";
 import OurStore from "./pages/OurStore/OurStore";
 import Blog from "./pages/Blog/Blog";
 import Contact from "./pages/Contact/Contact";
@@ -33,7 +32,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
-            <Route path="/about" element={<About />} />
             <Route path="/store" element={<OurStore />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />

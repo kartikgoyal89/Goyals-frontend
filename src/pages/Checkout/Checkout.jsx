@@ -588,7 +588,7 @@ const Checkout = () => {
       }
       const amountTobePaid = discountedPrice
         ? totalAmount - discountedPrice + 200
-        : totalAmount;
+        : totalAmount + 200;
       const { amount, id: order_id, currency } = result.data.order;
       const options = {
         key: "rzp_test_bV2zPFeujMpFVV", // Enter the Key ID generated from the Dashboard
@@ -611,8 +611,8 @@ const Checkout = () => {
           );
           await dispatch(
             createAnOrder({
-              totalPrice: amountTobePaid,
-              totalPriceAfterDiscount: totalAmount - discountedPrice,
+              totalPrice: priceAfterDeliveryCharge,
+              totalPriceAfterDiscount: totalAmount - discountedPrice + 200,
               OrderItems: cartProductState,
               paymentInfo: result.data,
               shippingInfo: shippingInfo,
