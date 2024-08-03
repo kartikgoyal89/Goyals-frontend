@@ -41,8 +41,10 @@ const Contact = () => {
 
   useEffect(() => {
     if (isSuccess && contact) {
+      toast.dismiss();
       toast.success("Enquiry sent succesfully!");
     } else if (isError) {
+      toast.dismiss();
       toast.error("Something Went Wrong!");
     }
     dispatch(resetState());

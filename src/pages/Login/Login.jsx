@@ -48,6 +48,7 @@ const Login = () => {
         navigate("/");
       }, 300);
     } else if (isError) {
+      toast.dismiss();
       toast.error(message?.response?.data?.message || "Something Went Wrong!");
     }
   }, [isSuccess, isError, loginDetails, message, dispatch, navigate]);

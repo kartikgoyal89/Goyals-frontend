@@ -22,7 +22,6 @@ const forgotPass = () => {
     validationSchema: forgotPasswordSchema,
     onSubmit: (values) => {
       dispatch(forgotPasswordToken(values));
-      // dispatch(loginUser(values));
     },
   });
   return (

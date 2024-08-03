@@ -31,7 +31,7 @@ const Orders = () => {
     <>
       <Meta title={"My Orders"} />
       <BreadCrumb title="My Orders" />
-      <div className="order-wrapper p-5">
+      <div className="order-wrapper">
         <div className="container-xxl">
           {orderState?.length > 0 ? (
             screenWidth >= breakpoint ? (

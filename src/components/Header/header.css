@@ -321,6 +321,7 @@
     .header-upper .container-xxl .side-logo{
         gap: 4px;
         padding: 0px !important;
+        margin-left: 0px;
     }
     .header-upper .container-xxl .side-logo .icon-div .icon{
         width: 27px;

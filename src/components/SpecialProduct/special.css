@@ -41,11 +41,7 @@
 }
 .special-product-card .img-slider .item{
     width: max-content !important;
-    /* border: 1px solid #e0e0e0; */
     border-radius: 10px;
-}
-.special-product-card .img-slider .item img{
-    border: 1px solid #e0e0e0;
 }
 
 .special-product-card .wishlist-icon{

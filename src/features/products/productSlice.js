@@ -160,6 +160,7 @@ export const productSlice = createSlice({
         state.isError = false;
         state.rating = action.payload;
         if (state?.isSuccess) {
+          toast.dismiss();
           toast.success("Product Rated Succesfully!");
         }
       })
@@ -169,6 +170,7 @@ export const productSlice = createSlice({
         state.isSuccess = false;
         state.message = action.error;
         if (state?.isError) {
+          toast.dismiss();
           toast.error("Something Went Wrong!");
         }
       })

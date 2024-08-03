@@ -34,24 +34,19 @@ const OurStore = () => {
   const categoryState = useSelector((state) => state?.product?.categories);
   const brandState = useSelector((state) => state?.product?.brands);
 
-  // useEffect(() => {
-  //   const newBrands = [];
-  //   const newCategories = [];
-  //   const newTags = [];
-  //   const newColors = [];
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const breakpoint = 660;
 
-  //   for (let i = 0; i < productState?.length; i++) {
-  //     const element = productState[i];
-  //     newBrands.push(element.brand);
-  //     newCategories.push(element?.category);
-  //     newTags.push(element?.tags);
-  //     newColors.push(element?.color);
-  //   }
-  //   setBrands(newBrands);
-  //   setCategories(newCategories);
-  //   setTags(newTags);
-  //   setColors(newColors);
-  // }, [productState]);
+  const handleResize = () => {
+    setScreenWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     dispatch(
@@ -132,17 +127,6 @@ const OurStore = () => {
                 <h3 className="filter-title">Product Tags</h3>
                 <div>
                   <div className="product-tags d-flex flex-wrap align-items-center gap-10">
-                    {/* {tags &&
-                      [...new Set(tags)].map((item, key) => {
-                        return (
-                          <span
-                            onClick={() => setTag(item)}
-                            className="badge bg-light text-secondary rounded-3 py-2 px-3"
-                          >
-                            {item}
-                          </span>
-                        );
-                      })} */}
                     <span
                       className="badge bg-light text-secondary rounded-3 py-2 px-3"
                       onClick={() => setTag("special")}

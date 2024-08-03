@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ReactStars from "react-rating-stars-component";
 import { Link, useNavigate } from "react-router-dom";
 import "./special.css";
@@ -12,6 +12,19 @@ const SpecialProduct = (props) => {
   const navigate = useNavigate();
   const { id, title, desc, price, brand, images, ratings } = props;
   const [zoomImg, setZoomImg] = useState(images[0]?.url);
+
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const breakpoint = 600;
+  const handleResize = () => {
+    setScreenWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const settings = {
     dots: true,
@@ -92,10 +105,17 @@ const SpecialProduct = (props) => {
             edit={false}
             activeColor="#ffd700"
           />
-          <p
-            className="desc"
-            dangerouslySetInnerHTML={{ __html: desc.substr(0, 200) + "..." }}
-          ></p>
+          {screenWidth >= breakpoint ? (
+            <p
+              className="desc"
+              dangerouslySetInnerHTML={{ __html: desc.substr(0, 200) + "..." }}
+            ></p>
+          ) : (
+            <p
+              className="desc"
+              dangerouslySetInnerHTML={{ __html: desc.substr(0, 100) + "..." }}
+            ></p>
+          )}
           <p className="price">
             <span className="red-p">{formatPriceToIndian(price)}</span>
           </p>

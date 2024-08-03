@@ -9,7 +9,6 @@ import * as yup from "yup";
 import CustomInput from "../../components/CustomInput/CustomInput";
 import { useDispatch, useSelector } from "react-redux";
 import { registerUser, resetState } from "../../features/users/userSlice.js";
-import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 
 const signUpSchema = yup.object({

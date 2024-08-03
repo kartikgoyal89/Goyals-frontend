@@ -8,7 +8,6 @@ import { GoArrowLeft } from "react-icons/go";
 import { useSelector, useDispatch } from "react-redux";
 import { useLocation, useNavigate } from "react-router-dom";
 import { getABlog } from "../../features/blogs/blogSlice.js";
-import toast from "react-hot-toast";
 
 const SingleBlog = () => {
   const dispatch = useDispatch();

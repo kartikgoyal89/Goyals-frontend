@@ -350,6 +350,26 @@ const Home = () => {
           arrows: true,
         },
       },
+      {
+        breakpoint: 560,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          arrows: true,
+        },
+      },
+      {
+        breakpoint: 471,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          arrows: true,
+        },
+      },
     ],
   };
 
@@ -708,7 +728,7 @@ const Home = () => {
       <div className="popular-wrapper">
         <div className="container-xxl">
           <h3 className="section-heading">Our Popular Products</h3>
-          <div className="row">
+          <div className="row d-flex align-items-center">
             <div className="side-box">
               <div className="card">
                 <img

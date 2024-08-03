@@ -175,6 +175,7 @@ const SingleProduct = () => {
       dispatch(getUserCart());
       dispatch(getPrdtRatings(getPrdtId));
     } else if (!getPrdtId || isError) {
+      toast.dismiss();
       toast.error("Something Went Wrong!");
       navigate("/store");
     }
@@ -200,8 +201,10 @@ const SingleProduct = () => {
   const handleWishlist = (id) => {
     dispatch(addToWishlist(id));
     if (wishlistprdt) {
+      toast.dismiss();
       toast.success("Product Removed from Wishlist");
     } else {
+      toast.dismiss();
       toast.success("Product Added to Wishlist");
     }
   };
@@ -218,8 +221,10 @@ const SingleProduct = () => {
   const handleCompare = (id) => {
     dispatch(addToCompareList(id));
     if (compareprdt) {
+      toast.dismiss();
       toast.success("Product Removed From Compare");
     } else {
+      toast.dismiss();
       toast.success("Product Added to Compare");
     }
   };
@@ -236,6 +241,7 @@ const SingleProduct = () => {
 
   const uploadCart = () => {
     if (color === null) {
+      toast.dismiss();
       toast.error("Please Choose a color!");
       return false;
     } else {
@@ -258,9 +264,11 @@ const SingleProduct = () => {
 
   const addRatingToProduct = () => {
     if (star === null) {
+      toast.dismiss();
       toast.error("Please provide the rating!");
       return false;
     } else if (comment === null) {
+      toast.dismiss();
       toast.error("Please add a review!");
       return false;
     } else {

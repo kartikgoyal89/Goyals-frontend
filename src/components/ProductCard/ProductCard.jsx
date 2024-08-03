@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./prdtcard.css";
 import ReactStars from "react-rating-stars-component";
 import { Link, useLocation } from "react-router-dom";
@@ -14,6 +14,20 @@ const ProductCard = (props) => {
   const addToWishlistFunc = (id) => {
     dispatch(addToWishlist(id));
   };
+
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const breakpoint = 660;
+
+  const handleResize = () => {
+    setScreenWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <>
@@ -63,10 +77,19 @@ const ProductCard = (props) => {
               edit={false}
               activeColor="#ffd700"
             />
-            <p
-              className={`desc ${grid === 12 ? "d-block" : "d-none"}`}
-              dangerouslySetInnerHTML={{ __html: product?.description }}
-            ></p>
+            {screenWidth >= breakpoint ? (
+              <p
+                className={`desc ${grid === 12 ? "d-block" : "d-none"}`}
+                dangerouslySetInnerHTML={{ __html: product?.description }}
+              ></p>
+            ) : (
+              <p
+                className={`desc ${grid === 12 ? "d-block" : "d-none"}`}
+                dangerouslySetInnerHTML={{
+                  __html: product?.description.substr(0, 120) + "...",
+                }}
+              ></p>
+            )}
             <p className="price">{formatPriceToIndian(product?.price)}</p>
           </div>
 

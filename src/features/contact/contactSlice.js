@@ -1,6 +1,5 @@
 import { createSlice, createAsyncThunk, createAction } from "@reduxjs/toolkit";
 import contactService from "./contactService";
-import toast from "react-hot-toast";
 
 const initialState = {
   contact: "",

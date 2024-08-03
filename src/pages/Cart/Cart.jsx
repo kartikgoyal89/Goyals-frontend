@@ -91,12 +91,10 @@ const Cart = () => {
                 cartState &&
                 cartState?.map((item, key) => {
                   return (
-                    <div
-                      key={key}
-                      className="cart-data mb-2 d-flex justify-content-between align-items-center mt-4"
-                    >
+                    <div key={key} className="cart-data mb-2 mt-4">
+                      <p className="total-price-res mb-0">Product: </p>
                       <div className="cart-col-1 d-flex align-items-center gap-15">
-                        <div className="w-30">
+                        <div className="">
                           <img
                             src={
                               item?.productId?.images[1]?.url
@@ -124,13 +122,14 @@ const Cart = () => {
                         </div>
                       </div>
                       <div className="cart-col-2">
+                        <p className="total-price-res mb-0">Price: </p>
                         <h5 className="price mb-0">
                           {formatPriceToIndian(item?.productId?.price)}
                         </h5>
                       </div>
-                      <div className="cart-col-3  d-flex align-items-center gap-20">
+                      <div className="cart-col-3  d-flex align-items-center">
                         <div className="d-flex align-items-center gap-10">
-                          <p className="quantity mb-0">Quantity: </p>
+                          <p className="total-price-res mb-0">Quantity: </p>
                           <input
                             className="form-control"
                             type="number"
@@ -147,20 +146,22 @@ const Cart = () => {
                               });
                             }}
                           />
-                        </div>
-                        <div
-                          className="delete-div"
-                          onClick={() => deleteACartProduct(item?._id)}
-                        >
-                          <img
-                            src="/delete.svg"
-                            className="del-btn"
-                            style={{ filter: "brightness(0) invert(1)" }}
-                            width="20px"
-                          />
+                          <div
+                            className="delete-div"
+                            onClick={() => deleteACartProduct(item?._id)}
+                          >
+                            <img
+                              src="/delete.svg"
+                              className="del-btn"
+                              style={{ filter: "brightness(0) invert(1)" }}
+                              width="20px"
+                            />
+                          </div>
                         </div>
                       </div>
                       <div className="cart-col-4">
+                        <p className="total-price-res mb-0">Total: </p>
+
                         <h5 className="price mb-0">
                           {formatPriceToIndian(
                             item?.productId?.price * item?.quantity

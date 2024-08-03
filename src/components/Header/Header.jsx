@@ -101,8 +101,8 @@ const Header = () => {
               minLength={2}
               onChange={(selected) => {
                 if (selected.length > 0) {
-                  navigate(`/product/${selected[0]?.prodId}`);
                   setSearchInput("");
+                  navigate(`/product/${selected[0]?.prodId}`);
                 }
               }}
               onInputChange={(text) => setSearchInput(text)}

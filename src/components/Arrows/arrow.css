@@ -119,3 +119,12 @@
         left: calc(100vw - 150px) !important;
     }
 }
+
+@media (max-width: 560px) {
+    
+.popular-wrapper  .popular-slider  .slick-arrow.slick-prev img{
+    position: absolute !important;
+    top: -10px !important;
+    left: calc(100vw - 110px) !important;
+}
+}
