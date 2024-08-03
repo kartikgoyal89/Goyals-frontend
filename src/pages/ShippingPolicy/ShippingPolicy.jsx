@@ -19,7 +19,7 @@ const ShippingPolicy = () => {
               style={{ boxShadow: "0 5px 6px rgba(0,0,0,0.05)" }}
             >
               <p className="mb-4">
-                At Digitic, we aim to provide reliable and prompt delivery
+                At Goyal's Store, we aim to provide reliable and prompt delivery
                 services to ensure your shopping experience is seamless.
               </p>
               <h6>Shipping Options and Costs</h6>
@@ -66,8 +66,8 @@ const ShippingPolicy = () => {
                 If you have any questions about our shipping policy, please
                 contact us at{" "}
                 <span style={{ color: "rgb(64, 64, 255)" }}>
-                  <a href="mailto:kartikgoyal794@gmail.com">
-                    kartikgoyal794@gmail.com
+                  <a href="mailto:goyals.shopping@gmail.com">
+                    goyals.shopping@gmail.com
                   </a>
                 </span>
               </p>

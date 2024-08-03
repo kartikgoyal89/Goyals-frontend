@@ -97,7 +97,11 @@ const SpecialProduct = (props) => {
         </div>
         <div className="special-product-content">
           <h5 className="brand">{brand}</h5>
-          <h6 className="title">{title}</h6>
+          {screenWidth >= breakpoint ? (
+            <h6 className="title">{title}</h6>
+          ) : (
+            <h6 className="title">{title.substr(0, 50) + "..."}</h6>
+          )}
           <ReactStars
             count={5}
             size={24}
@@ -113,6 +117,7 @@ const SpecialProduct = (props) => {
           ) : (
             <p
               className="desc"
+              style={{ fontSize: " 13px" }}
               dangerouslySetInnerHTML={{ __html: desc.substr(0, 100) + "..." }}
             ></p>
           )}

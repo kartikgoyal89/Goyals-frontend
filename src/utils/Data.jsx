@@ -2,7 +2,7 @@ export const services = [
   {
     image: "/shipping.png",
     title: "Free Shipping",
-    tagline: "From all orders above $100",
+    tagline: "From all orders above ₹1000",
   },
   {
     image: "/gift.png",

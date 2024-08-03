@@ -20,8 +20,8 @@ const RefundPolicy = () => {
               style={{ boxShadow: "0 5px 6px rgba(0,0,0,0.05)" }}
             >
               <p>
-                At Digitic, we strive to ensure customer satisfaction with every
-                purchase. If you are not completely satisfied with your
+                At Goyal's Store, we strive to ensure customer satisfaction with
+                every purchase. If you are not completely satisfied with your
                 purchase, we are here to help.
               </p>
               <h6>Refund Eligibility</h6>
@@ -43,8 +43,8 @@ const RefundPolicy = () => {
                   <strong>Contact Us: </strong>
                   Email us at{" "}
                   <span style={{ color: "rgb(64, 64, 255)" }}>
-                    <a href="mailto:kartikgoyal794@gmail.com">
-                      kartikgoyal794@gmail.com
+                    <a href="mailto:goyals.shopping@gmail.com">
+                      goyals.shopping@gmail.com
                     </a>
                   </span>{" "}
                   with your order number and the reason for your return.
@@ -71,8 +71,8 @@ const RefundPolicy = () => {
               <p>
                 If you need to exchange an item, please contact us at{" "}
                 <span style={{ color: "rgb(64, 64, 255)" }}>
-                  <a href="mailto:kartikgoyal794@gmail.com">
-                    kartikgoyal794@gmail.com
+                  <a href="mailto:goyals.shopping@gmail.com">
+                    goyals.shopping@gmail.com
                   </a>
                 </span>
                 . We only replace items if they are defective or damaged.
@@ -87,8 +87,8 @@ const RefundPolicy = () => {
                 If you have any questions about our refund policy, please
                 contact us at{" "}
                 <span style={{ color: "rgb(64, 64, 255)" }}>
-                  <a href="mailto:kartikgoyal794@gmail.com">
-                    kartikgoyal794@gmail.com
+                  <a href="mailto:goyals.shopping@gmail.com">
+                    goyals.shopping@gmail.com
                   </a>
                 </span>
               </p>

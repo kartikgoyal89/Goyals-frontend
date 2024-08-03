@@ -215,3 +215,12 @@
         display: none;
     }
 }
+
+@media (max-width: 530px) {
+    .slick-list .slick-track .action-bar{
+        display: none;
+    }
+    .slick-list .slick-track .wishlist-icon{
+        display: none;
+    }
+}

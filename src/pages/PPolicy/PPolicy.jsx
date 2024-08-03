@@ -18,10 +18,10 @@ const PPolicy = () => {
               className="policy"
               style={{ boxShadow: "0 5px 6px rgba(0,0,0,0.05)" }}
             >
-              Welcome to Digitic! We value your privacy and are committed to
-              protecting your personal information. This privacy policy outlines
-              how we collect, use, disclose, and safeguard your information when
-              you use our website and services.
+              Welcome to Goyal's Store! We value your privacy and are committed
+              to protecting your personal information. This privacy policy
+              outlines how we collect, use, disclose, and safeguard your
+              information when you use our website and services.
               <h5 className="mt-4 mb-3">Information We Collect</h5>
               <div>
                 <strong> 1. Personal Information : </strong>
@@ -84,8 +84,8 @@ const PPolicy = () => {
                 <p>
                   Email: &nbsp;
                   <span style={{ color: "rgb(64, 64, 255)" }}>
-                    <a href="mailto:kartikgoyal794@gmail.com">
-                      kartikgoyal794@gmail.com
+                    <a href="mailto:goyals.shopping@gmail.com">
+                      goyals.shopping@gmail.com
                     </a>
                   </span>
                 </p>

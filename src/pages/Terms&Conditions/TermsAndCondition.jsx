@@ -19,8 +19,8 @@ const TermsAndCondition = () => {
               style={{ boxShadow: "0 5px 6px rgba(0,0,0,0.05)" }}
             >
               <p className="mb-4">
-                Welcome to Digitic! By accessing and using our website, you
-                agree to comply with and be bound by the following terms and
+                Welcome to Goyal's Store! By accessing and using our website,
+                you agree to comply with and be bound by the following terms and
                 conditions.
               </p>
               <h6>Use of the Site</h6>
@@ -92,7 +92,8 @@ const TermsAndCondition = () => {
               <ol>
                 <li className="mt-1">
                   <strong>Rights: </strong>All content on this site, including
-                  text, graphics, logos, and images, is the property of Digitic.
+                  text, graphics, logos, and images, is the property of Goyal's
+                  Store.
                 </li>
                 <li className="mt-1">
                   <strong>Use: </strong>You may not use our intellectual
@@ -108,9 +109,9 @@ const TermsAndCondition = () => {
                   disruptions.
                 </li>
                 <li className="mt-1">
-                  <strong>Liability: </strong>Digitic will not be liable for any
-                  direct, indirect, incidental, or consequential damages arising
-                  from your use of the site.
+                  <strong>Liability: </strong>Goyal's Store will not be liable
+                  for any direct, indirect, incidental, or consequential damages
+                  arising from your use of the site.
                 </li>
               </ol>
               <h6>Governing Law</h6>
@@ -130,8 +131,8 @@ const TermsAndCondition = () => {
                 If you have any questions about our terms and conditions, please
                 contact us at{" "}
                 <span style={{ color: "rgb(64, 64, 255)" }}>
-                  <a href="mailto:kartikgoyal794@gmail.com">
-                    kartikgoyal794@gmail.com
+                  <a href="mailto:goyals.shopping@gmail.com">
+                    goyals.shopping@gmail.com
                   </a>
                 </span>
               </p>
